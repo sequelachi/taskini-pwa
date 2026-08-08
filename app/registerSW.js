@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/taskini-pwa/app/sw.js', { scope: '/taskini-pwa/app/' })})}

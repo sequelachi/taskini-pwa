@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Taskini — instalacja</title>
+<meta name="theme-color" content="#17110F">
+<meta name="robots" content="noindex">
+<link rel="icon" href="app/icons/icon-192-v3.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;700;900&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --espresso:#17110F; --kakao:#241B18; --line:#3D2E27;
+    --sezam:#F6EDE2; --muted:#9C8D80; --faint:#6B5C51;
+    --pistacja:#A8D94F; --pistacja-d:#31401A;
+    --d:'Gabarito',system-ui,sans-serif;
+    --b:'Instrument Sans',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--espresso); color:var(--sezam); font-family:var(--b);
+    line-height:1.5; -webkit-font-smoothing:antialiased;
+    padding:calc(32px + env(safe-area-inset-top,0px)) 20px calc(48px + env(safe-area-inset-bottom,0px));
+  }
+  .wrap{max-width:34rem;margin:0 auto}
+  header{text-align:center;margin-bottom:2.5rem}
+  .mark{width:84px;height:84px;border-radius:22px;display:block;margin:0 auto 1rem}
+  h1{font-family:var(--d);font-weight:900;font-size:2.25rem;letter-spacing:-.02em}
+  .tag{color:var(--muted);margin-top:.25rem}
+
+  .card{background:var(--kakao);border:1px solid var(--line);border-radius:18px;padding:1.5rem;margin-bottom:1rem}
+  .card h2{font-family:var(--d);font-weight:700;font-size:1.2rem;display:flex;align-items:center;gap:.6rem}
+  .card h2 span{
+    font-family:var(--b);font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--pistacja);background:var(--pistacja-d);border-radius:999px;padding:.25rem .6rem
+  }
+  ol{margin:1rem 0 0;padding-left:1.25rem;color:var(--muted)}
+  ol li{margin-bottom:.5rem}
+  ol li b{color:var(--sezam);font-weight:600}
+  .note{margin-top:1rem;font-size:.85rem;color:var(--faint)}
+
+  .btn{
+    display:block;text-align:center;text-decoration:none;font-family:var(--d);font-weight:700;
+    font-size:1.05rem;padding:.95rem 1rem;border-radius:14px;margin-top:1.25rem;
+    background:var(--pistacja);color:#1B2410;
+  }
+  .btn small{display:block;font-family:var(--b);font-weight:400;font-size:.78rem;opacity:.7;margin-top:.15rem}
+
+  footer{text-align:center;color:var(--faint);font-size:.8rem;margin-top:2rem}
+  kbd{
+    font-family:var(--b);font-size:.85em;background:var(--line);color:var(--sezam);
+    border-radius:5px;padding:.1em .4em
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img class="mark" src="app/icons/icon-192-v3.png" alt="">
+    <h1>Taskini</h1>
+    <p class="tag">Zbierasz manę, wydajesz na szamę.</p>
+  </header>
+
+  <a class="btn" href="app/">Otwórz aplikację<small>potem zainstaluj ją według instrukcji poniżej</small></a>
+
+  <div class="card">
+    <h2>iPhone <span>Safari</span></h2>
+    <ol>
+      <li>Otwórz tę stronę <b>w Safari</b> — Chrome na iOS nie potrafi instalować aplikacji.</li>
+      <li>Stuknij <b>Udostępnij</b> <kbd>↑</kbd> na dolnym pasku.</li>
+      <li>Wybierz <b>Do ekranu początkowego</b>.</li>
+    </ol>
+    <p class="note">Po dodaniu aplikacja działa offline i bez paska przeglądarki. Powiadomienia wymagają iOS 16.4 lub nowszego i zadziałają wyłącznie z ekranu początkowego, nie z karty Safari.</p>
+  </div>
+
+  <div class="card">
+    <h2>Android <span>Chrome</span></h2>
+    <ol>
+      <li>Otwórz aplikację przyciskiem powyżej.</li>
+      <li>Menu przeglądarki <kbd>⋮</kbd> → <b>Zainstaluj aplikację</b> (albo <b>Dodaj do ekranu głównego</b>).</li>
+    </ol>
+    <p class="note">Chrome często sam podpowiada instalację paskiem na dole ekranu.</p>
+  </div>
+
+  <footer>Taskini · <code>tech.aimko.taskini</code></footer>
+
+</div>
+</body>
+</html>
